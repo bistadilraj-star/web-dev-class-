@@ -1,0 +1,29 @@
+a{
+    color: chartreuse;
+    font-size : 23px;
+    text-decoration:dotted;
+    font-weight:bold;
+}
+p {
+    color: rgb(255, 0, 0);
+    font-size: 150px;
+    text-decoration:wavy;
+    font-weight:bold;
+}
+h2{
+    color: rgba(94, 255, 0, 0.911);
+    font-size: 100px;
+    text-decoration:underline;
+    font-weight:bold;
+}
+p span{
+    font-style: oblique;
+    color: cyan;
+}
+span{
+    color: black;
+}
+.new-course span
+{
+color: #e0e419f8;
+}
