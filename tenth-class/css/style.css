@@ -1,0 +1,40 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Section spacing */
+.section {
+  height: 400px; /* Space for scrolling */
+}
+
+/* Sticky boxes */
+.sticky-box {
+  height: 100px;
+  width: 200px;
+  position: sticky;
+  top: 20px; /* distance from top */
+  margin: 20px auto; /* center horizontally and add vertical spacing */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 8px;
+  color: white;
+}
+
+/* Colors */
+.green {
+  background-color: #4CAF50;
+}
+
+.yellow {
+  background-color: #FFC107;
+  color: black;
+}
+
+.blue {
+  background-color: #2196F3;
+}
