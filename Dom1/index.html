@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Manipulation Example</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+    }
+
+    .wrapper {
+      margin-top: 20px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: lightgray;
+      display: inline-block;
+      margin: 10px;
+      line-height: 100px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>DOM Manipulation with querySelectorAll</h2>
+
+  <div class="wrapper">
+    <div class="box">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+  </div>
+
+  <button onclick="changeBoxes()">Change Boxes</button>
+
+  <script>
+
+    // Function to change all boxes
+    function changeBoxes() {
+      let boxes = document.querySelectorAll(".box")
+
+      boxes.forEach((box, index) => {
+        box.innerText = "Box " + (index + 1)
+        box.style.backgroundColor = "orange"
+        box.style.color = "white"
+      })
+    }
+
+    // Add click event to each box
+    let boxes = document.querySelectorAll(".box")
+
+    boxes.forEach(box => {
+      box.addEventListener("click", function() {
+        this.style.backgroundColor = "green"
+        this.innerText = "Clicked!"
+      })
+    })
+
+  </script>
+
+</body>
+</html>
